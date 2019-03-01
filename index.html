@@ -392,32 +392,33 @@
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for this template -->
+<script src="js/stylish-portfolio.min.js"></script>
  
-
 <!-- Load Facebook SDK for JavaScript -->
 <div id="fb-root"></div>
 <script>
   window.fbAsyncInit = function () {
     FB.init({
       xfbml: true,
-      version: 'v3.2'
+      version: "v3.2"
     });
   };
 
   (function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
+    var js,
+      fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s);
     js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
     fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
+  })(document, "script", "facebook-jssdk");
 </script>
 
 <!-- Your customer chat code -->
-<div class="fb-customerchat" attribution=setup_tool page_id="2046737398925341" theme_color="#ff5ca1" logged_in_greeting="Hi! Welcome Yidris Plumbing Tech. How may  I help you?.  Let Chat"
-  logged_out_greeting="Hi! Welcome Yidris Plumbing Tech. How may  I help you?.  Let Chat">
-</div>
+<div class="fb-customerchat" attribution="setup_tool" page_id="149726685571030" theme_color="#7646ff"
+  logged_in_greeting="Hi! How can we help you? Let Chat" logged_out_greeting="Hi! How can we help you? Let Chat"></div>
 </body>
 
 </html>
